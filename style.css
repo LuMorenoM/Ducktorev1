@@ -1,0 +1,105 @@
+ body {
+        font-family: 'Inter', sans-serif;
+      }      
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: bolder;
+ }
+
+ .playfair-display-bold {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+  }
+
+
+/*NABAR*/
+
+nav {
+    display: flex;
+}
+.navleft {
+    flex: 1;
+    display: flex;
+    justify-content: left;
+    
+}
+.sobrenosotras, .productos, .blog, .contacto, .carrito, .linea
+ {
+    display: inline-block;
+    margin-top: 10%;
+    margin-inline-start: 5%;
+    margin-inline-end: 5%;
+
+}
+.navright {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+.navcenter {
+    flex: 1;
+    text-align: center;
+}
+.navlogo {
+    width: 28%;
+    margin-top: 2%;
+    
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    margin-top: 5%;
+    position: relative;
+}
+.unicornbox, .unicorn, .unicornimage {
+    width: 100%;
+    background-size: cover;
+    
+    
+}
+.textbox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-93%, -50%);
+    margin-left: 1%;
+    
+
+}
+
+.titulo{
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+
+h5 {
+    margin-right: 38%;
+    transform: translate(0%, -15%);
+    font-size: 16px;
+}
+
+button {
+    background-color: #FF4081;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.3em;
+    cursor: pointer;
+    border-radius: 14px;
+    color: #000000;
+    font-family: playfair-display-regular;
+    font-weight: bold;
+    transform: translate(0%, -100%);
+}
+button:hover {
+    background-color: #FF4081;
+    color: #FFD500;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+
+}
+
