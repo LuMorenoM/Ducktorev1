@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Al Agua Patos</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="contacto.css">
+    <link rel="shortcut icon" href="Imágenes/Logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="navleft">
+        <div class="sobrenosotras">Sobre Nosotras</div>
+        <div class="productos">Productos</div>
+        <div class="blog">Blog</div>
+      </div>
+      <div class="navcenter">
+        <div class="logo">
+          <img
+            class="navlogo"
+            src="/Imágenes/Logo.png"
+            alt="logo_al_agua_patos"
+          />
+        </div>
+      </div>
+      <div class="navright">
+        <div class="contacto">Contacto</div>
+        <div class="linea"><img src="/Imágenes/Line 24.png" alt="linea" /></div>
+        <div class="carrito">Carrito</div>
+        <div class="carrito">
+          <img
+            class="navcarrito"
+            src="/Imágenes/Carrito.png"
+            alt="carrito_de_compras"
+          />
+        </div>
+      </div>
+    </nav>
+    <div class="contacto">
+        <h2>Contacto</h2>
+        <img src="/Imágenes/img_contacto.jpg" alt="Imágen de un pato de goma con espuma">
+        <form action="procesar.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+   
+  </body>
+</html>
