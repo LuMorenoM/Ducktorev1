@@ -1,5 +1,6 @@
 .contacto {
-  max-width: 1000px;
+  max-width: 900px;
+  max-height: 80vh;
   margin: 50px auto;
   display: flex;
   align-items: flex-start;
@@ -8,45 +9,72 @@
   padding: 20px;
 }
 
-.contacto h2 {
+h2 {
   width: 100%;
   text-align: center;
   font-size: 2.5em;
   position: absolute;
-  color: #ff4081; /* Rosa fuerte */
-  margin-bottom: 30px;
+  color: #ff4081; 
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: auto;
+}
+
+.contacto {
+  max-width: 800px;
+  margin: 40px auto;
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 20px;
+  flex-wrap: wrap;
 }
 
 .contacto img {
   max-width: 400px;
-  height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .contacto form {
   flex: 1;
+  max-width: 400px;
   display: flex;
   flex-direction: column;
+  gap: 15px;
 }
 
 .contacto label {
-  display: none; /* Ocultamos los labels si usas placeholders */
+  display: none;
 }
 
 .contacto input,
 .contacto textarea {
   border: 1.5px solid #ff4081;
-  border-radius: 5px;
-  padding: 12px;
-  margin-bottom: 15px;
+  border-radius: 8px;
+  padding: 10px;
   font-size: 1em;
   width: 100%;
   box-sizing: border-box;
-  color: #333;
 }
 
 .contacto input::placeholder,
 .contacto textarea::placeholder {
   color: #999;
+}
+
+.contacto button {
+  background-color: #ff4081;
+  color: white;
+  font-size: 1em;
+  font-weight: normal;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: fit-content;
+  align-self: flex-start;
+  margin-top: 30px;
 }
