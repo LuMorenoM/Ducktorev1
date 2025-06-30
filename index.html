@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Al Agua Patos</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="Imágenes/Logo.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="/Imágenes/Logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,20 +18,20 @@
     <nav>
       <div class="navleft">
         <div class="sobrenosotras">Sobre Nosotras</div>
-        <div class="productos">Productos</div>
+        <a href="productos.html" class="productos">Productos</a>
         <div class="blog">Blog</div>
       </div>
       <div class="navcenter">
-        <div class="logo">
+        <a class="logo" href="index.html">
           <img
             class="navlogo"
             src="/Imágenes/Logo.png"
             alt="logo_al_agua_patos"
           />
-        </div>
+        </a>
       </div>
       <div class="navright">
-        <div class="contacto">Contacto</div>
+        <a href="contacto.html" class="contacto">Contacto</a>
         <div class="linea"><img src="/Imágenes/Line 24.png" alt="linea" /></div>
         <div class="carrito">Carrito</div>
         <div class="carrito">
@@ -43,7 +43,9 @@
         </div>
       </div>
     </nav>
+
     <header>
+      
       <div class="unicornbox">
         <div class="unicorn">
           <img
@@ -69,7 +71,8 @@
             para sonreír.
           </h5>
         </div>
-        <div><button>leer más</button></div>
+        <div class="conocenos"><button class="conocenos1">Conócenos</button></div>
+        <div><button class="button-leermas">leer más</button></div>
       </div>
     </header>
     <section class="catalogo">
@@ -79,15 +82,82 @@
         </div>
         <div class="infosection1">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint et
-            unde doloribus magni quia asperiores, aliquid saepe quaerat ipsum a.
+            Este mes, los patos de goma vienen con más estilo que nunca. Tenemos
+            descuentos especiales en nuestros best sellers <br> Ingresa el código:
+            PATODELMES y llévate un regalo sorpresa por la compra de dos patos. <p>
+            ¡No dejes que se te escapen, que estos patos vuelan!</p>
           </p>
         </div>
-        <div class="botoncatalogobox">
+        <a href="productos.html" class="botoncatalogobox">
           <button class="botoncatalogo">Catálogo</button>
+        </a>
+      </div>
+      <div class="rightsection">
+        <div class="boxup">
+          <div class="box1 product-card">
+            <img class="imgpato" src="/Imágenes/pony.jpg" alt="pato_pony" />
+            <div class="overlay">
+              
+              <span class="price">€9.99</span>
+              <span class="price"> <img src="/Imágenes/Carrito.png" alt="carrito"></span>
+              
+            </div>
+          </div>
+          <div class="box2 product-card">
+            <img class="imgpato" src="Imágenes/glitter-corona-rosa.jpg"
+alt="pato_glitter"/>
+            <div class="overlay">
+              <span class="price">€12.99</span>
+              <span class="price"> <img src="/Imágenes/Carrito.png" alt="carrito"></span>
+            </div>
+          </div>
+        </div>
+        <div class="boxdown">
+          <div class="box3 product-card">
+            <img
+              class="imgpato"
+              src="/Imágenes/be-loved-verde.png"
+              alt="patobeloved"
+            />
+            
+            
+          </div>
+          <div class="box4 product-card">
+            <img
+              class="imgpato"
+              src="/Imágenes/unicornio-blanco-xl (1).jpg"
+              alt="pato_unicornio"
+            />
+            <div class="overlay">
+              <span class="price">€9.99</span>
+              <span class="price"> <img src="/Imágenes/Carrito.png" alt="carrito"></span>
+          </div>
         </div>
       </div>
-      <div class="rightsection"></div>
     </section>
+    <footer>
+      <div class="boxizquierda">
+        <div class="boxlogoup">
+          <img
+            class="footerlogo"
+            src="/Imágenes/Logo.png"
+            alt="logo_al_agua_patos"
+          />
+        </div>
+        <div class="redesociales">
+          <div class="redes">
+            <img src="/Imágenes/Facebook.png" alt="facebook" />
+            <img src="/Imágenes/Instagram.png" alt="instagram" />
+          </div>
+        </div>
+      </div>
+      <div class="boxderecha">
+        <p class="contacto1">Contacto</p>
+        <p class="ciudad">Barcelona</p>
+        <p class="ciudad">Madrid</p>
+        <p class="ciudad">San Sebastian</p>
+        <p class="ciudad">Valencia</p>
+      </div>
+    </footer>
   </body>
 </html>

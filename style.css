@@ -1,4 +1,4 @@
- body {
+body {
         font-family: 'Inter', sans-serif;
       }      
 h1 {
@@ -25,7 +25,7 @@ nav {
     justify-content: left;
     
 }
-.sobrenosotras, .productos, .blog, .contacto, .carrito, .linea
+.sobrenosotras, .productos, .blog, .contacto, .carrito, .linea, .carrito1
  {
     display: inline-block;
     margin-top: 10%;
@@ -67,26 +67,30 @@ header {
     left: 50%;
     transform: translate(-93%, -50%);
     margin-left: 1%;
+    font-size: 1em;
     
 
 }
 
 .titulo{
     font-weight: bolder;
-    font-size: 2em;
+    font-size: 1.5em;
+    margin-bottom: 8%;
 }
 
 
 h5 {
-    margin-right: 38%;
+    margin-right: 30%;
     transform: translate(0%, -15%);
-    font-size: 16px;
+    font-size: 1em;
+    
 }
 
-button {
+.button-leermas {
     background-color: #FF4081;
     border: none;
     padding: 10px 20px;
+    margin-top: 2%;
     font-size: 1.3em;
     cursor: pointer;
     border-radius: 14px;
@@ -96,10 +100,332 @@ button {
     transform: translate(0%, -100%);
 }
 button:hover {
-    background-color: #FF4081;
+    background-color: #ff6940;
     color: #FFD500;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 
 }
 
+/* SECTION */
+
+section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8%;
+    
+}
+
+.leftsection1 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    margin-left: 5%;
+    margin-top: 10%;
+    
+    
+}
+.productdelmes {
+    font-family: playfair-display-regular;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.infosection1 {
+    font-size: 1em;
+    margin-bottom: 2%;
+    margin-right: 25%;
+    line-height: 1.2;
+}
+
+.botoncatalogo {
+    background-color: #6200EA;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.3em;
+    cursor: pointer;
+    border-radius: 14px;
+    color: #ffffff;
+    font-family: playfair-display-regular;
+    font-weight: bold;
+}
+
+
+.rightsection {
+    flex: 1;
+    display: flex;  
+    margin-right: 5%;
+}
+
+.imgpato {
+    width: 100%;
+    height: auto;
+    border-radius: 50px;
+    
+    
+}
+.box1, .box2, .box3, .box4 {
+    position: relative; 
+    overflow: hidden; 
+    box-sizing: border-box;
+}
+.box1 {
+    width: 90%;
+    height: auto;
+    background-color: #FF6F00;
+    padding: 5%;
+    border-radius: 50px;
+    margin-left: 5%;
+}   
+.product-card {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* desenfocar imagen al hacer hover */
+  .product-card:hover .imgpato {
+    filter: blur(4px);
+    transition: filter 0.3s ease;
+  }
+  
+  /* Overlay con precio oculto al inicio */
+  .overlay {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.4);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 50px;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .product-card:hover .overlay {
+    opacity: 1;
+  }
+  
+ 
+
+ .box2 {
+    width: 90%;
+    height: auto;
+    background-color: #FF4081;
+    padding: 5%;
+    border-radius: 50px;
+    margin-left: 5%;
+    margin-top: 5%; 
+ }
+
+
+
+ .box3 {
+    width: 90%;
+    height: auto;
+    background-color: #FFD500;
+    padding: 5%;
+    border-radius: 50px;
+    margin-left: 13%;
+    
+ }
+ .box4 {
+    width: 90%;
+    height: auto;
+    background-color: #00E676;
+    padding: 5%;
+    border-radius: 50px;
+    margin-left: 13%;
+    margin-right: 5%;
+    margin-top: 5%;
+ }
+
+ /*FOOTER*/
+
+ footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10%;
+    padding: 8%;
+    background-color: #F6DCE7;
+ }
+
+.footerlogo {
+    width: 30%;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.boxizquierda, .boxderecha {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.boxlogoup, .redesociales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxlogoup {
+    margin-bottom: 10%;
+}
+
+.contacto1 {
+    font-family: playfair-display-regular;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+.hamburger-menu,
+.conocenos  {
+    display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+    .navleft,
+    .productos,
+    .sobrenosotras,
+    .blog, 
+    .contacto,
+    .linea,
+    .carrito1,
+    .navlogo{
+      display: none;
+    }
+  
+    .hamburger-menu {
+      display: block;
+      margin: 10px;
+    }
+    .hamburger-menu img {
+        width: 3em;
+        height: auto;
+        cursor: pointer;
+        margin-top: 30%;
+    }
+    
+    nav {
+        display: flex;
+    }
+    .hamburger-menu,
+    .navleft
+     {
+        display: block;
+        justify-content:space-between;
+    }
+
+    h5,
+    .button-leermas {
+        display: none;
+    }
+    .conocenos {
+        display: block;
+        margin-top: -10%;
+        
+        
+    }
+    
+    .conocenos1 {
+        background-color: #FF4081;
+        border-radius: 14px;
+        padding: 5px 10px;
+        font-family: playfair-display-bold;
+        font-weight: bold;
+        font-size: 1em;
+        border-color: none;
+        border: none;
+        color: white;
+    }
+    .conocenos1:hover {
+        background-color: #ff6940;
+        color: #FFD500;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transform: scale(1.05); 
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    
+     .catalogo {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        margin-top: 5%; 
+    }
+
+    .leftsection1 {
+        text-align: center;
+        margin-bottom: 5%;
+        display: flex;
+    }
+
+    .titlesection1 {
+        font-size: 1.5em; 
+        font-weight: bold;
+        margin-bottom: 2%; 
+        text-align: center; 
+        
+        
+    }
+
+    .infosection1 {
+        font-size: 1em; 
+        line-height: 1.5; 
+        margin: 0 5%; 
+        
+    }
+
+    
+    .rightsection {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        gap: 10px; 
+        margin-top: 5%; 
+    }
+
+    .box1, .box2, .box3, .box4 {
+        width: 60%; 
+        height: auto; 
+        margin: 0 auto; 
+    }
+    .box1, .box3 {
+        margin-bottom: 3%;
+    }
+
+    .product-card {
+        position: relative;
+        overflow: hidden;
+        
+    }
+
+    .imgpato {
+        width: 100%; 
+        height: auto;
+    }
+
+    .overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5); 
+        color: white;
+        text-align: center;
+        padding: 10px;
+        display: none; 
+    }
+
+    .product-card:hover .overlay {
+        display: block; 
+    }
+
+}

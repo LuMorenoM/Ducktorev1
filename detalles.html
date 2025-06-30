@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Al Agua Patos</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="contacto.css">
+    <link rel="stylesheet" href="detalles.css" />
     <link rel="shortcut icon" href="/Imágenes/Logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,7 +16,7 @@
     />
   </head>
   <body>
-        <nav>
+    <nav>
       <div class="navleft">
         <div class="sobrenosotras">Sobre Nosotras</div>
         <a href="productos.html" class="productos">Productos</a>
@@ -44,20 +44,60 @@
         </div>
       </div>
     </nav>
-    <h2>Contacto</h2>
-    <div class="contacto">
-        <img src="/Imágenes/img_contacto.jpg" alt="Imágen de un pato de goma con espuma">
-        <form action="procesar.php" method="post">
-            <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
-            
-            <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
-            
-            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Mensaje" required></textarea>
-            
-            <button type="submit">Enviar</button>
-        </form>
-    </div>
-   
+
+    <main class="main-content">
+        <section class="product-section">
+            <div class="contenedorDeImagenes">
+                <div class="productImage">
+                    <img src="/Assets/Freddie-Mercurie.jpeg" alt="Freddie Mercurie"/>
+                </div>
+
+                <div class="miniImage">
+                    <div class="fredie-mini">
+                      <img src="/Assets/Freddie-Mercurie-en-caja.jpeg"/>
+                    </div>
+                
+
+                    <div class="fredie-caja">    
+                      <img src="/Assets/Freddie-Mercurie.jpeg"/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-details">
+                <h1>Freddie Mercurie</h1>
+                <p class="pricie">8.80€</p>
+
+
+                <div class="actions">
+                    <button class="btn-cart">añadir al carrito</button>
+                    <div class="quantity-box">
+                        <spam class="icon">🛒</spam>
+                        <button class="qty-btn">+</button>
+                        <span class="qty">1</span>
+                        <button class="qty-btn">-</button>
+                    </div>
+                </div>
+                <div class="actions">
+                    <button class="gmail"><img src="/Assets/Gmail.png.png"></button>
+                </div>
+                <div class="incon">
+                    <img src="/Assets/Instagram.png.png">
+                    <img src="/Assets/facebook.png.png">
+                </div>    
+                <div class="description">
+                    <h2> Descripción</h2>
+                    <ul>
+                        <li>Libre de productos tóxicos</li>
+                        <li>Apto para todas las edades y mascotas</li>
+                        <li>Fabricado bajo la directiva europea 2009/48/CE sobre seguridad en los juguetes</li> 
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
     <footer>
       <div class="boxizquierda">
         <div class="boxlogoup">
@@ -82,6 +122,5 @@
         <p class="ciudad">Valencia</p>
       </div>
     </footer>
-    
   </body>
 </html>
