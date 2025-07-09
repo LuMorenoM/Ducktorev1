@@ -15,6 +15,7 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
     <nav>
       <a class="logo" href="index.html">
@@ -31,58 +32,36 @@
       </div>
     </nav>
 
-    <main class="main-content">
-        <section class="product-section">
-            <div class="contenedorDeImagenes">
-                <div class="productImage">
-                    <img src="/Assets/Freddie-Mercurie.jpeg" alt="Freddie Mercurie"/>
-                </div>
+    <div class="product-container">
+  
+      <div class="image-section">
+        <img id="mainImage" src="../Imágenes/pato-goma-freddie-1.jpg" alt="Product" class="main-image">
 
-                <div class="miniImage">
-                    <div class="fredie-mini">
-                      <img src="/Assets/Freddie-Mercurie-en-caja.jpeg"/>
-                    </div>
-                
+        <div class="thumbnails">
+          <img src="../Imágenes/pato-goma-freddie-1.jpg">
+          <img src="../Imágenes/pato-goma-freddie-2.jpg">
+        </div>
+      </div>
 
-                    <div class="fredie-caja">    
-                      <img src="/Assets/Freddie-Mercurie.jpeg"/>
-                    </div>
-                </div>
-            </div>
+      <div class="product-details">
+        <h2>Freddie Mercury</h2>
+        <div class="price">8.80€</div>
+        <p>
+          Juguete de baño coleccionable de patito de goma. Todos nuestros patos pasan estrictos controles de toxicidad y seguridad. Están diseñados pensando en su uso seguro para la salud y el medio ambiente. <br> Nuestros patos están libres de ftalatos, son reciclables, de tacto suave y perfectos para todas las edades.
+        </p>
 
-            <div class="product-details">
-                <h1>Freddie Mercurie</h1>
-                <p class="pricie">8.80€</p>
+        <p class="stock">Hay existencias</p>
 
-
-                <div class="actions">
-                    <button class="btn-cart">añadir al carrito</button>
-                    <div class="quantity-box">
-                        <spam class="icon">🛒</spam>
-                        <button class="qty-btn">+</button>
-                        <span class="qty">1</span>
-                        <button class="qty-btn">-</button>
-                    </div>
-                </div>
-                <div class="actions">
-                    <button class="gmail"><img src="/Assets/Gmail.png.png"></button>
-                </div>
-                <div class="incon">
-                    <img src="/Assets/Instagram.png.png">
-                    <img src="/Assets/facebook.png.png">
-                </div>    
-                <div class="description">
-                    <h2> Descripción</h2>
-                    <ul>
-                        <li>Libre de productos tóxicos</li>
-                        <li>Apto para todas las edades y mascotas</li>
-                        <li>Fabricado bajo la directiva europea 2009/48/CE sobre seguridad en los juguetes</li> 
-                    </ul>
-                </div>
-            </div>
-        </section>
-    </main>
-
+        <div class="quantity-wrapper">
+          <button class="quantity-btn">−</button>
+          <input type="number" value="1" min="1" class="quantity-input">
+          <button class="quantity-btn">+</button>
+        </div>
+          
+        <a href=""></a><button class="btn">Añadir al carrito</button>
+       
+      </div>
+    </div>
 
     <footer>
 
@@ -95,5 +74,7 @@
       <p>Copyright 2025 ©</p>
         
     </footer>
+
+    <script src="../JS/detalles.js"></script>
   </body>
 </html>
