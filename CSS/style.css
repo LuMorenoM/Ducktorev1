@@ -1,66 +1,75 @@
 body {
-        font-family: 'Inter', sans-serif;
-      }      
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}   
+   
 h1 {
     font-family: 'Playfair Display', serif;
     font-weight: bolder;
- }
+}
 
- .playfair-display-bold {
+.playfair-display-bold {
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-weight: bold;
     font-style: normal;
-  }
+}
 
 
 /*NABAR*/
 
 nav {
-    display: flex;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 10px;
 }
-.navleft {
-    flex: 1;
-    display: flex;
-    justify-content: left;
-    
-}
-.sobrenosotras, .productos, .blog, .contacto, .carrito, .linea, .carrito1
- {
-    display: inline-block;
-    margin-top: 10%;
-    margin-inline-start: 5%;
-    margin-inline-end: 5%;
 
+nav a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #000000;
 }
-.navright {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
+
+.logo img {
+  height: 80px;
 }
-.navcenter {
-    flex: 1;
-    text-align: center;
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
-.navlogo {
-    width: 28%;
-    margin-top: 2%;
-    
+
+.nav-right a {
+  text-decoration: none;
+  font-size: 15px;
+  color: #2a004f;
+}
+
+.line {
+  height: 40px;
+  width: 3px;
+  object-fit: contain;
+}
+
+.shoppingCart img {
+  height: 30px;
+  margin-right: 20px;
 }
 
 /* HEADER */
 
 header {
     display: flex;
-    margin-top: 5%;
     position: relative;
+    width: 70hv;
 }
-.unicornbox, .unicorn, .unicornimage {
+
+.unicornimage {
     width: 100%;
-    background-size: cover;
-    
-    
 }
+
 .textbox {
     position: absolute;
     top: 50%;
@@ -68,11 +77,9 @@ header {
     transform: translate(-93%, -50%);
     margin-left: 1%;
     font-size: 1em;
-    
-
 }
 
-.titulo{
+.title{
     font-weight: bolder;
     font-size: 1.5em;
     margin-bottom: 8%;
@@ -83,7 +90,7 @@ h5 {
     margin-right: 30%;
     transform: translate(0%, -15%);
     font-size: 1em;
-    
+
 }
 
 .button-leermas {
@@ -99,6 +106,7 @@ h5 {
     font-weight: bold;
     transform: translate(0%, -100%);
 }
+
 button:hover {
     background-color: #ff6940;
     color: #FFD500;
@@ -122,10 +130,8 @@ section {
     flex-direction: column;
     align-items:flex-start;
     margin-left: 5%;
-    margin-top: 10%;
-    
-    
 }
+
 .productdelmes {
     font-family: playfair-display-regular;
     font-weight: bold;
@@ -139,7 +145,7 @@ section {
     line-height: 1.2;
 }
 
-.botoncatalogo {
+.butonCatalog {
     background-color: #6200EA;
     border: none;
     padding: 10px 20px;
@@ -161,9 +167,7 @@ section {
 .imgpato {
     width: 100%;
     height: auto;
-    border-radius: 50px;
-    
-    
+    border-radius: 50px; 
 }
 .box1, .box2, .box3, .box4 {
     position: relative; 
@@ -244,46 +248,43 @@ section {
     margin-left: 13%;
     margin-right: 5%;
     margin-top: 5%;
- }
+}
 
- /*FOOTER*/
+/*FOOTER*/
 
- footer {
-    display: flex;
-    justify-content: space-between;
-    
-    margin-top: 10%;    
+footer {  
     background-color: #F6DCE7;
-    height: auto;
- }
-
-.footerlogo {
-    width: 30%;
-    margin-left: 5%;
-    margin-top: 5%;
-}
-.boxizquierda, .boxderecha {
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 20px;
 }
 
-.boxlogoup, .redesociales {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.socialMedia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; 
+  margin-bottom: 10px;
 }
 
-.boxlogoup {
-    margin-bottom: 10%;
+.socialMedia img {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
 }
 
-.contacto1 {
-    font-family: playfair-display-regular;
-    font-weight: bold;
-    font-size: 1.4em;
+.socialMedia img:hover {
+  transform: scale(1.1);
 }
+
+footer p {
+  color: #333;
+  font-size: 14px;
+  margin: 0;
+}
+
 .hamburger-menu,
 .conocenos  {
     display: none;
@@ -355,7 +356,7 @@ section {
         font-size: 1.5em;
     }
     
-     .catalogo {
+     .catalog {
         display: flex;
         flex-direction: column; 
         align-items: center; 
