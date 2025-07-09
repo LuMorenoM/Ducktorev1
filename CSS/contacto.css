@@ -21,7 +21,7 @@ h2 {
   margin: auto;
 }
 
-.contacto {
+.contactForm {
   max-width: 800px;
   margin: 40px auto;
   display: flex;
@@ -32,13 +32,13 @@ h2 {
   flex-wrap: wrap;
 }
 
-.contacto img {
+.contactForm img {
   max-width: 400px;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-.contacto form {
+.contactForm form {
   flex: 1;
   max-width: 400px;
   display: flex;
@@ -46,12 +46,12 @@ h2 {
   gap: 15px;
 }
 
-.contacto label {
+.contactForm label {
   display: none;
 }
 
-.contacto input,
-.contacto textarea {
+.contactForm input,
+.contactForm textarea {
   border: 1.5px solid #ff4081;
   border-radius: 8px;
   padding: 10px;
@@ -60,12 +60,12 @@ h2 {
   box-sizing: border-box;
 }
 
-.contacto input::placeholder,
-.contacto textarea::placeholder {
+.contactForm input::placeholder,
+.contactForm textarea::placeholder {
   color: #999;
 }
 
-.contacto button {
+.contactForm button {
   background-color: #ff4081;
   color: white;
   font-size: 1em;

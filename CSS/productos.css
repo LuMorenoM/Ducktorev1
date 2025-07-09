@@ -10,7 +10,7 @@ h2 {
   margin: auto;
 }
 
-.contenedorProductos {
+.productsContainer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
@@ -18,7 +18,7 @@ h2 {
     margin: 0 auto;
 }
 
-.contenedorProductos div {
+.productsContainer div {
     border: 1px solid #ddd;
     border-radius: 10px;
     padding: 1rem;
@@ -27,11 +27,11 @@ h2 {
     transition: transform 0.2s ease;
 }
 
-.contenedorProductos div:hover {
+.productsContainer div:hover {
     transform: scale(1.02);
 }
 
-.contenedorProductos img {
+.productsContainer img {
     width: 100%;
     height: auto;
     max-height: 200px;
@@ -39,11 +39,11 @@ h2 {
     border-radius: 10px;
 }
 
-.contenedorProductos p {
+.productsContainer p {
     margin: 0.5rem 0;
 }
 
-.contenedorProductos button {
+.productsContainer button {
     background-color: #ff4081;
     color: white;
     border: none;
@@ -54,6 +54,6 @@ h2 {
     font-weight: bold;
 }
 
-.contenedorProductos button:hover {
+.productsContainer button:hover {
     background-color: #e73370;
 }
