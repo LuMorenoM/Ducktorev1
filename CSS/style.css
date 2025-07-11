@@ -252,37 +252,28 @@ section {
 
 /*FOOTER*/
 
-footer {  
-    background-color: #F6DCE7;
-    padding: 20px 0;
-    text-align: center;
-    margin-top: 20px;
-}
-
-
-.socialMedia {
+footer {
+  background-color: #F6DCE7; 
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 20px; 
-  margin-bottom: 10px;
-}
-
-.socialMedia img {
-  width: 32px;
-  height: 32px;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-}
-
-.socialMedia img:hover {
-  transform: scale(1.1);
+  margin-top: 15px;
+  padding: 10px;
+  font-family: sans-serif;
 }
 
 footer p {
-  color: #333;
-  font-size: 14px;
   margin: 0;
+  color: #000;
+  font-size: 11px;
+}
+
+footer img {
+    width: 25px;
+}
+
+.socialMedia a {
+  margin-left: 15px;
 }
 
 .hamburger-menu,
