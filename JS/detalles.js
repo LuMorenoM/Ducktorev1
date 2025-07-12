@@ -6,8 +6,8 @@ const pato = {
     descripcion: "Juguete de baño coleccionable de patito de goma. Todos nuestros patos pasan estrictos controles de toxicidad y seguridad. Están diseñados pensando en su uso seguro para la salud y el medio ambiente. Nuestros patos están libres de ftalatos, son reciclables, de tacto suave y perfectos para todas las edades."
 }
 
-let nombreTxt = document.getElementById("nombre")
-nombreTxt.textContent = pato.nombre
+let nombreH2 = document.getElementById("nombre")
+nombreH2.textContent = pato.nombre
 
 let imagenPrincipal = document.getElementById("imagenPrincipal")
 imagenPrincipal.src = pato.imagen
@@ -42,4 +42,9 @@ function decrementar(){
     let nuevoValor = valorActual - 1
     cantidadInput.value = nuevoValor
    }
+}
+
+function anadirAlCarrito(){
+    window.location.href = `pago.html?pato=${pato.nombre}&cantidad=${cantidadInput.value}`;
+
 }
