@@ -15,9 +15,6 @@ h1 {
     font-style: normal;
 }
 
-
-/*NABAR*/
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -57,8 +54,6 @@ nav a {
   height: 30px;
   margin-right: 20px;
 }
-
-/* HEADER */
 
 header {
     display: flex;
@@ -114,8 +109,6 @@ button:hover {
     transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 
 }
-
-/* SECTION */
 
 section {
     display: flex;
@@ -187,13 +180,11 @@ section {
     overflow: hidden;
   }
   
-  /* desenfocar imagen al hacer hover */
   .product-card:hover .imgpato {
     filter: blur(4px);
     transition: filter 0.3s ease;
   }
   
-  /* Overlay con precio oculto al inicio */
   .overlay {
     position: absolute;
     top: 0; 
@@ -249,8 +240,6 @@ section {
     margin-right: 5%;
     margin-top: 5%;
 }
-
-/*FOOTER*/
 
 footer {
   background-color: #F6DCE7; 
