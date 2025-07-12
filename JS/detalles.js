@@ -33,5 +33,13 @@ function incrementar() {
 }
 
 function decrementar(){
-   
+   let cantidadInput = document.getElementById("cantidad")
+
+   let valorActualTxt = cantidadInput.value
+   let valorActual = parseInt(valorActualTxt)
+
+   if (valorActual > 1) {
+    let nuevoValor = valorActual - 1
+    cantidadInput.value = nuevoValor
+   }
 }
