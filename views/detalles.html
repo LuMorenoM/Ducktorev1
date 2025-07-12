@@ -36,7 +36,7 @@
     <div class="product-container">
   
       <div class="image-section">
-        <img id="mainImage" src="../Imágenes/pato-goma-freddie-1.jpg" alt="Product" class="main-image">
+        <img id="imagenPrincipal" alt="Product" class="main-image">
 
         <div class="thumbnails">
           <img src="../Imágenes/pato-goma-freddie-1.jpg">
@@ -45,21 +45,19 @@
       </div>
 
       <div class="product-details">
-        <h2>Freddie Mercury</h2>
-        <div class="price">8.80€</div>
-        <p>
-          Juguete de baño coleccionable de patito de goma. Todos nuestros patos pasan estrictos controles de toxicidad y seguridad. Están diseñados pensando en su uso seguro para la salud y el medio ambiente. <br> Nuestros patos están libres de ftalatos, son reciclables, de tacto suave y perfectos para todas las edades.
-        </p>
+        <h2 id="nombre"></h2>
+        <div class="price" id="precio"></div>
+        <p id="descripcion"></p>
 
         <p class="stock">Hay existencias</p>
 
         <div class="quantity-wrapper">
-          <button class="quantity-btn">−</button>
-          <input type="number" value="1" min="1" class="quantity-input">
-          <button class="quantity-btn">+</button>
+          <button onclick="decrementar()" class="quantity-btn">−</button>
+          <input type="number" id="cantidad" class="quantity-input">
+          <button onclick="incrementar()" class="quantity-btn">+</button>
         </div>
           
-        <a href=""></a><button class="btn">Añadir al carrito</button>
+        <a href=""></a><button onclick="anadirAlCarrito()" class="btn">Añadir al carrito</button>
        
       </div>
     </div>
