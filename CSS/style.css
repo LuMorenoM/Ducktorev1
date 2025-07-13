@@ -30,6 +30,11 @@ nav a {
 
 .logo img {
   height: 80px;
+  transition: all 0.5s ;
+}
+
+.logo img:hover {
+    height: 85px;
 }
 
 .nav-right {
@@ -42,6 +47,11 @@ nav a {
   text-decoration: none;
   font-size: 15px;
   color: #2a004f;
+  transition: color 0.3s ease;
+}
+
+.nav-right a:hover {
+  color: #FF4081; 
 }
 
 .line {
@@ -53,6 +63,11 @@ nav a {
 .shoppingCart img {
   height: 30px;
   margin-right: 20px;
+  transition: all 0.5s ;
+}
+
+.shoppingCart img:hover {
+    height: 35px;
 }
 
 header {
