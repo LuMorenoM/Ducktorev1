@@ -35,7 +35,7 @@
 
     <main class="cart-container">
       <section class="cart-items">
-        <div class="item">
+        <div class="item" id="product1">
           <img src="../Imágenes/pato-goma-freddie-1.jpg" alt="Pato Freddie" class="item-img" />
           <div class="item-details">
             <p class="item-title">Pato de goma</p>
@@ -48,12 +48,12 @@
             <button>+</button>
           </div>
           <p class="item-total">8,80 €</p>
-          <button class="delete-btn">🗑️</button>
+          <button class="delete-btn" onclick="deleteproduct('product1')">🗑️</button>
         </div>
     
         <hr />
     
-        <div class="item">
+        <div class="item" id="product2">
           <img src="../Imágenes/glitter-corona-rosa.jpg" alt="Pato Crown" class="item-img" />
           <div class="item-details">
             <p class="item-title">Pato de goma</p>
@@ -66,7 +66,7 @@
             <button>+</button>
           </div>
           <p class="item-total">8,80 €</p>
-          <button class="delete-btn">🗑️</button>
+          <button class="delete-btn" onclick="deleteproduct('product2')">🗑️</button>
         </div>
       </section>
     
@@ -96,6 +96,6 @@
         
     </footer>
 
-    <script src="../JS/detalles.js"></script>
+    <script src="../JS/pago.js"></script>
   </body>
 </html>
