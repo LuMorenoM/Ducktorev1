@@ -73,11 +73,36 @@ nav a {
 header {
     display: flex;
     position: relative;
-    width: 70hv;
+   
 }
 
-.unicornimage {
-    width: 100%;
+.carousel {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.carousel-images {
+  display: flex;
+  height: 500px;
+  animation: slide 12s infinite;
+}
+
+.carousel-images img {
+  width: 100%;
+  object-fit: cover;
+  flex: 0 0 100%;
+}
+
+@keyframes slide {
+  0%   { transform: translateX(0%); }
+  30%  { transform: translateX(0%); }
+  35%  { transform: translateX(-100%); }
+  65%  { transform: translateX(-100%); }
+  70%  { transform: translateX(-200%); }
+  100% { transform: translateX(-200%); }
 }
 
 .textbox {
