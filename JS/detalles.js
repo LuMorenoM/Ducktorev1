@@ -13,7 +13,7 @@ let imagenPrincipal = document.getElementById("imagenPrincipal")
 imagenPrincipal.src = pato.imagen
 
 let precioTxt = document.getElementById("precio")
-precioTxt.textContent = pato.precio.toFixed(2)
+precioTxt.textContent = pato.precio.toFixed(2) + " €"
 
 let descripcionTxt = document.getElementById("descripcion")
 descripcionTxt.textContent = pato.descripcion
@@ -32,7 +32,7 @@ function incrementar() {
  cantidadInput.value = nuevoValor
 }
 
-function decrementar(){
+function decrementar() {
    let cantidadInput = document.getElementById("cantidad")
 
    let valorActualTxt = cantidadInput.value
@@ -44,7 +44,7 @@ function decrementar(){
    }
 }
 
-function anadirAlCarrito(){
+function anadirAlCarrito() {
     window.location.href = `pago.html?pato=${pato.nombre}&cantidad=${cantidadInput.value}`;
 
 }
