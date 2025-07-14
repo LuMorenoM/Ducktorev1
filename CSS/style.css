@@ -15,9 +15,6 @@ h1 {
     font-style: normal;
 }
 
-
-/*NABAR*/
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -33,6 +30,11 @@ nav a {
 
 .logo img {
   height: 80px;
+  transition: all 0.5s ;
+}
+
+.logo img:hover {
+    height: 85px;
 }
 
 .nav-right {
@@ -45,6 +47,11 @@ nav a {
   text-decoration: none;
   font-size: 15px;
   color: #2a004f;
+  transition: color 0.3s ease;
+}
+
+.nav-right a:hover {
+  color: #FF4081; 
 }
 
 .line {
@@ -56,9 +63,12 @@ nav a {
 .shoppingCart img {
   height: 30px;
   margin-right: 20px;
+  transition: all 0.5s ;
 }
 
-/* HEADER */
+.shoppingCart img:hover {
+    height: 35px;
+}
 
 header {
     display: flex;
@@ -114,8 +124,6 @@ button:hover {
     transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 
 }
-
-/* SECTION */
 
 section {
     display: flex;
@@ -187,13 +195,11 @@ section {
     overflow: hidden;
   }
   
-  /* desenfocar imagen al hacer hover */
   .product-card:hover .imgpato {
     filter: blur(4px);
     transition: filter 0.3s ease;
   }
   
-  /* Overlay con precio oculto al inicio */
   .overlay {
     position: absolute;
     top: 0; 
@@ -249,8 +255,6 @@ section {
     margin-right: 5%;
     margin-top: 5%;
 }
-
-/*FOOTER*/
 
 footer {
   background-color: #F6DCE7; 
