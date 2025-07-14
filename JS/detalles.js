@@ -1,4 +1,3 @@
-// Lista de patitos disponibles
 const patitos = [
   {
     id: "1",
@@ -23,27 +22,21 @@ const patitos = [
 }
 ];
 
-// Obtener el ID desde la URL
 const params = new URLSearchParams(window.location.search);
 const id = params.get("id");
 
-// Buscar el patito correspondiente
 const pato = patitos.find(p => p.id === id);
 
-// Si no existe, mostrar mensaje de error
 if (!pato) {
   document.querySelector(".product-container").innerHTML = "<p>Patito no encontrado.</p>";
-  throw new Error("Patito no encontrado");
 }
 
-// Mostrar la info en la página
 document.getElementById("nombre").textContent = pato.nombre;
 document.getElementById("imagenPrincipal").src = pato.imagen;
 document.getElementById("precio").textContent = pato.precio.toFixed(2) + " €";
 document.getElementById("descripcion").textContent = pato.descripcion;
 document.getElementById("cantidad").value = 1;
 
-// Funciones para incrementar y decrementar cantidad
 function incrementar() {
   let cantidadInput = document.getElementById("cantidad");
   cantidadInput.value = parseInt(cantidadInput.value) + 1;
@@ -56,8 +49,7 @@ function decrementar() {
   }
 }
 
-// Añadir al carrito (simulado)
 function anadirAlCarrito() {
   const cantidad = document.getElementById("cantidad").value;
-  window.location.href = `pago.html?pato=${encodeURIComponent(pato.nombre)}&cantidad=${cantidad}`;
+  window.location.href = `pago.html?id=${encodeURIComponent(pato.id)}&cantidad=${cantidad}`;
 }
