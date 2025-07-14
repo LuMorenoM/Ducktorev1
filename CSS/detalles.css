@@ -67,13 +67,19 @@
     font-weight: 600;
 }
 
+.action-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
 .quantity-wrapper {
   border: 1px solid #ccc;
   border-radius: 6px;
   overflow: hidden;
   width: fit-content;
-  position: absolute;
-  margin-left: 40px;
   display: flex;
 }
 
@@ -83,7 +89,7 @@
   padding: 8px 12px;
   font-size: 16px;
   font-weight: bold;
-  cursor: default; 
+  cursor: pointer; 
   user-select: none;
 }
 
@@ -105,8 +111,6 @@
     cursor: pointer;
     font-weight: bold;
     border-radius: 5px;
-    margin: 20px auto 0 auto;
-    display: block;
 }
 
 @media (max-width: 768px) {
@@ -126,13 +130,11 @@
     margin-left: 0;
   }
 
-  .quantity-wrapper {
-    margin-left: auto;
-    margin-right: auto;
+  .action-row {
+    flex-direction: column;
   }
 
   .btn {
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 10px;
   }
 }
