@@ -35,29 +35,27 @@
 
     <main class="cart-container">
       <section class="cart-items">
-        <div class="item">
-          <img src="../Imágenes/pato-goma-freddie-1.jpg" alt="Pato Freddie" class="item-img" />
+        <div class="item" id="product1">
+          <img id="imagenPrincipal" class="item-img" />
           <div class="item-details">
-            <p class="item-title">Pato de goma</p>
-            <p class="item-name">Freddie</p>
+            <p class="item-name" id="nombre"></p>
           </div>
-          <p class="item-price">8,80 €</p>
+          <p class="item-price" id="precio"></p>
           <div class="quantity-control">
-            <button>-</button>
-            <span>1</span>
-            <button>+</button>
+            <button onclick="decrementar()">-</button>
+            <input type="number" id="cantidad" class="quantity-input">
+            <button onclick="incrementar()">+</button>
           </div>
           <p class="item-total">8,80 €</p>
-          <button class="delete-btn">🗑️</button>
+          <button class="delete-btn" onclick="deleteproduct('product1')">🗑️</button>
         </div>
     
         <hr />
     
-        <div class="item">
+        <div class="item" id="product2">
           <img src="../Imágenes/glitter-corona-rosa.jpg" alt="Pato Crown" class="item-img" />
           <div class="item-details">
-            <p class="item-title">Pato de goma</p>
-            <p class="item-name">Crown</p>
+          <p class="item-name">Crown</p>
           </div>
           <p class="item-price">8,80 €</p>
           <div class="quantity-control">
@@ -66,7 +64,7 @@
             <button>+</button>
           </div>
           <p class="item-total">8,80 €</p>
-          <button class="delete-btn">🗑️</button>
+          <button class="delete-btn" onclick="deleteproduct('product2')">🗑️</button>
         </div>
       </section>
     
@@ -94,6 +92,7 @@
       
     </footer>
 
-    <script src="../JS/detalles.js"></script>
+    <script src="../JS/pago.js"></script>
+    <script src="../JS/eliminar.js"></script>
   </body>
 </html>
