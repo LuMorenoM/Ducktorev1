@@ -82,3 +82,25 @@ h2 {
     background-color: #e73370;
 }
 
+@media (max-width: 600px) {
+    .productsContainer {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+
+    .productsContainer div {
+        max-width: 100%;
+    }
+
+    .productsContainer img {
+        max-height: 160px;
+    }
+
+    .productsContainer p {
+        font-size: 0.9rem;
+    }
+
+    .productsContainer button {
+        font-size: 0.85rem;
+    }
+}
