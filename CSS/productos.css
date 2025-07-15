@@ -82,7 +82,12 @@ h2 {
     background-color: #e73370;
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 768px) {
+    .filterProducts{
+        display: block;
+        margin: 20px;
+    }
+        
     .productsContainer {
         grid-template-columns: 1fr;
         padding: 0 1rem;
