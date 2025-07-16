@@ -19,6 +19,10 @@ h2 {
     margin-right: 20px;
 }
 
+.btnFilter{
+    display: none;
+}
+
 .filterButtons {
   border: 3px solid #ff4081;
   border-radius: 10px;
@@ -83,11 +87,35 @@ h2 {
 }
 
 @media screen and (max-width: 768px) {
+
+
+    .btnFilter{
+        display: block;
+        background-color: #ffffff;
+        color: white;
+        border: none;
+        padding: 0.6rem 1rem;
+        border-radius: 6px;
+        cursor: pointer;
+        margin-bottom: 1rem;
+    }
+
+    .btnFilter img{
+        width: 40px;
+    }
+
     .filterProducts{
         display: block;
-        margin: 20px;
     }
-        
+
+    .category {
+        display: none;
+    }
+
+    .category.active {
+        display: block;
+    }
+            
     .productsContainer {
         grid-template-columns: 1fr;
         padding: 0 1rem;
@@ -108,4 +136,5 @@ h2 {
     .productsContainer button {
         font-size: 0.85rem;
     }
+
 }

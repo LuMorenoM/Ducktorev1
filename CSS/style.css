@@ -142,7 +142,7 @@ h5 {
     transform: translate(0%, -100%);
 }
 
-button:hover {
+.button-leermas:hover {
     background-color: #ff6940;
     color: #FFD500;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
