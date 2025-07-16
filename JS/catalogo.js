@@ -1,20 +1,17 @@
-const container = document.getElementById("productsContainer")
+const container = document.getElementById("productsContainer");
 
-patos.forEach(pato => {
-   const div = document.createElement("div");
+patos.forEach((pato) => {
+  const div = document.createElement("div");
+  div.className = "targetaProducto";
+  div.setAttribute("id-targeta", pato.id);
 
-   div.innerHTML = `
+  div.innerHTML = `
       <img src="${pato.imagen}" alt="Pato de goma ${pato.nombre}">
       <p>${pato.nombre}</p>
-      <p>${Number(pato.precio).toFixed(2)} €</p>
+      <p>${pato.precio.toFixed(2)} €</p>
       <a href="detalles.html?id=${pato.id}">
-         <button ${pato.existencias === 0 ? 'disable': ''}>${pato.existencias === 0 ? 'Agotado' : 'Ver producto'}</button>
+         <button>Ver producto</button>
       </a> 
-      `
-   container.appendChild(div)
-})
-
-
-
-
-
+      `;
+  container.appendChild(div);
+});
