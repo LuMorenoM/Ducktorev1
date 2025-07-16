@@ -34,38 +34,8 @@
     </nav>
 
     <main class="cart-container">
-      <section class="cart-items">
-        <div class="item" id="product1">
-          <img id="imagenPrincipal" class="item-img" />
-          <div class="item-details">
-            <p class="item-name" id="nombre"></p>
-          </div>
-          <p class="item-price" id="precio"></p>
-          <div class="quantity-control">
-            <button onclick="decrementar()">-</button>
-            <input type="number" id="cantidad" class="quantity-input">
-            <button onclick="incrementar()">+</button>
-          </div>
-          <p class="item-total">8,80 €</p>
-          <button class="delete-btn" onclick="deleteproduct('product1')">🗑️</button>
-        </div>
-    
-        <hr />
-    
-        <div class="item" id="product2">
-          <img src="../Imágenes/glitter-corona-rosa.jpg" alt="Pato Crown" class="item-img" />
-          <div class="item-details">
-          <p class="item-name">Crown</p>
-          </div>
-          <p class="item-price">8,80 €</p>
-          <div class="quantity-control">
-            <button>-</button>
-            <span>1</span>
-            <button>+</button>
-          </div>
-          <p class="item-total">8,80 €</p>
-          <button class="delete-btn" onclick="deleteproduct('product2')">🗑️</button>
-        </div>
+      <section class="cart-items" id="cartItems">
+        
       </section>
     
       <section class="cart-summary">
@@ -76,11 +46,12 @@
         </div>
         <div class="summary-line total">
           <p>total:</p>
-          <p><strong>17.60 €</strong></p>
+          <p><strong id="totalGeneral">0.00 €</strong></p>
         </div>
         <a href="./recibo.html"><button class="checkout-btn">FINALIZAR COMPRA</button></a>
       </section>
     </main>
+   
 
     <footer>
       <p>Copyright 2025 ©</p>
@@ -92,6 +63,7 @@
       
     </footer>
 
+    <script src="../JS/datosdepatos.js"></script>
     <script src="../JS/pago.js"></script>
     <script src="../JS/eliminar.js"></script>
   </body>
