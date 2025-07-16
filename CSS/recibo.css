@@ -1,8 +1,28 @@
 .containerReceipt{
+    min-height: 81vh;
+}
+
+.containerReceiptdiv {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    text-align: center;
+    padding: 2rem;
 }
 
+.returnBtn {
+    width: 200px;
+    background-color: #F6DCE7; 
+    color: #000; 
+    border: none;
+    padding: 1rem 2.5rem;
+    border-radius: 999px; 
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.returnBtn:hover {
+    background-color: #f3cddd; 
+}
