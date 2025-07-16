@@ -12,6 +12,7 @@ h2 {
 
 .filterProducts{
     display: flex;
+    margin-left: 100px;
 }
 
 .filterButtons {
@@ -22,6 +23,13 @@ h2 {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   transition: transform 0.2s ease;
   list-style-type: none;
+  margin-left: 20px;
+}
+ul{
+    list-style-type: none;
+}
+li:hover{
+    cursor: pointer;
 }
 
 .productsContainer {
