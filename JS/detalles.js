@@ -30,3 +30,4 @@ function anadirAlCarrito() {
   const cantidad = document.getElementById("cantidad").value;
   window.location.href = `pago.html?id=${encodeURIComponent(pato.id)}&cantidad=${cantidad}`;
 }
+
