@@ -73,11 +73,36 @@ nav a {
 header {
     display: flex;
     position: relative;
-    width: 70hv;
+   
 }
 
-.unicornimage {
-    width: 100%;
+.carousel {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.carousel-images {
+  display: flex;
+  height: 500px;
+  animation: slide 12s infinite;
+}
+
+.carousel-images img {
+  width: 100%;
+  object-fit: cover;
+  flex: 0 0 100%;
+}
+
+@keyframes slide {
+  0%   { transform: translateX(0%); }
+  30%  { transform: translateX(0%); }
+  35%  { transform: translateX(-100%); }
+  65%  { transform: translateX(-100%); }
+  70%  { transform: translateX(-200%); }
+  100% { transform: translateX(-200%); }
 }
 
 .textbox {
@@ -117,7 +142,7 @@ h5 {
     transform: translate(0%, -100%);
 }
 
-button:hover {
+.button-leermas:hover {
     background-color: #ff6940;
     color: #FFD500;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -264,6 +289,7 @@ footer {
   margin-top: 15px;
   padding: 10px;
   font-family: sans-serif;
+  max-width: 100%;
 }
 
 footer p {
@@ -425,4 +451,15 @@ footer img {
         display: block; 
     }
 
+    footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    }
+
+  footer p {
+    margin-bottom: 10px;
+    font-size: 12px;
+    }
 }
+

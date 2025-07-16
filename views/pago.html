@@ -35,7 +35,7 @@
 
     <main class="cart-container">
       <section class="cart-items">
-        <div class="item">
+        <div class="item" id="product1">
           <img id="imagenPrincipal" class="item-img" />
           <div class="item-details">
             <p class="item-name" id="nombre"></p>
@@ -46,13 +46,13 @@
             <input type="number" id="cantidad" class="quantity-input">
             <button onclick="incrementar()">+</button>
           </div>
-          <p class="item-total" id="total"></p>
-          <button class="delete-btn">🗑️</button>
+          <p class="item-total">8,80 €</p>
+          <button class="delete-btn" onclick="deleteproduct('product1')">🗑️</button>
         </div>
     
         <hr />
     
-        <!-- <div class="item">
+        <div class="item" id="product2">
           <img src="../Imágenes/glitter-corona-rosa.jpg" alt="Pato Crown" class="item-img" />
           <div class="item-details">
           <p class="item-name">Crown</p>
@@ -64,8 +64,8 @@
             <button>+</button>
           </div>
           <p class="item-total">8,80 €</p>
-          <button class="delete-btn">🗑️</button>
-        </div> -->
+          <button class="delete-btn" onclick="deleteproduct('product2')">🗑️</button>
+        </div>
       </section>
     
       <section class="cart-summary">
@@ -83,17 +83,16 @@
     </main>
 
     <footer>
-
-      <div class="socialMedia">
-        
+      <p>Copyright 2025 ©</p>
+      <div class="socialMedia"> 
         <a href="https://www.facebook.com/" target="_blank" ><img src="/Imágenes/Facebook.png" alt="facebook" /></a>
         <a href="https://www.instagram.com/" target="_blank"><img src="/Imágenes/Instagram.png" alt="instagram" /></a>
-        
+        <a href="https://www.whatsapp.com/" target="_blank"><img src="/Imágenes/Whatsapp.png" alt="whatsapp" /></a>
       </div>
-      <p>Copyright 2025 ©</p>
-        
+      
     </footer>
 
     <script src="../JS/pago.js"></script>
+    <script src="../JS/eliminar.js"></script>
   </body>
 </html>
