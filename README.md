@@ -71,11 +71,12 @@ git clone https://github.com/tu-usuario/ducks-store-dinamico.git
 ### Capturas del Proyecto 📸
 Vista Desktop
 🖥️ 
-
-
+![Vista Desktop](Imágenes\desktop-view.png)
 
 Vista Mobile
 📱 
+
+![Vista Mobile](Imágenes\mobile-view.png)
 
 ### Nuestro Equipo Increíble 💫
 🧠 - **[Paola Pulga](https://github.com/Pao-Pul)**  
